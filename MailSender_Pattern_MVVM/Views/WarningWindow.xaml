@@ -1,0 +1,43 @@
+﻿<Window x:Class="MailSender_Pattern_MVVM.Views.WarningWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MailSender_Pattern_MVVM.Views"
+        mc:Ignorable="d"
+        Title="Warning" Height="220" Width="600" Icon="../res/mail.png" ResizeMode="NoResize" Background="#FF333333" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="155*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Column="1"
+                      Margin="0,26,14,55"
+                      Height="110">
+            <TextBlock HorizontalAlignment="Stretch"
+                       VerticalAlignment="Stretch"
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"
+                       Foreground="White"
+                       Text="{Binding WarningText}"
+                       Background="#FF3E3E3E"
+                       Height="110"/>
+        </ScrollViewer>
+
+        <Button Grid.Column="1"
+                Width="100"
+                Height="25"
+                Content="Close"
+                Click="Button_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="351,152,14,14"
+                />
+
+        <Image Source="../res/warning.png"
+               Grid.Column="0"
+               Grid.Row="0" Height="72" Margin="24,45,24,74" Width="81" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</Window>
