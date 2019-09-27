@@ -4,4 +4,4 @@
 
 This is my first WPF programm.
 You have to set up DB first in environment you want to use this mailSender.
-Yo can find DB creation script in file ```Create DB.txt``` in root of project.
+You can find DB creation script in file ```Create DB.txt``` in root of project.
