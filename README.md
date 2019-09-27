@@ -1,8 +1,6 @@
 # MailSender
-
 ## EF(DB First)
+### Pattern MVVM
 
-## Mail Sender with LINQ to SQL you can find in Branch
-"master" https://github.com/ice19942335/MailSender/tree/master
-
-### Main project name in solution - MailSender_Pattern_MVVM
+This is my first WPF programm.
+You have to set up DB first in environment you want to use this mailSender.
